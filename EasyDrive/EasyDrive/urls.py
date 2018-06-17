@@ -19,7 +19,8 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
-    path('', include('easysensor.urls')),
-    path('', include('user.urls')),
-    path('', include('trajet.urls')),
+    path('api/', include('easysensor.urls')),
+    path('api/', include('user.urls')),
+    path('api/', include('trajet.urls')),
+    path('', include('easyweb.urls'))
 ]

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'trajet.apps.TrajetConfig',
     'easysensor.apps.EasysensorConfig',
     'user.apps.UserConfig',
+    'easyweb.apps.EasywebConfig'
 ]
 
 MIDDLEWARE = [
