@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  {% load static %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EasyDrive">
+  <meta name="author" content="Axel Fournier">
+  <link rel="shortcut icon" href="{% static 'ico/favicon.png' %}">
+
+  <title> EasyDrive </title>
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Helvetica:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+
+  <!-- ==== BOOTSTRAP ==== -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha384-leGYpHE9Tc4N9OwRd98xg6YFpB9shlc/RkilpFi0ljr3QD4tFoFptZvgnnzzwG4Q" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'showcase/css/jquery.fullPage.css' %}" />
+  <link rel="stylesheet" href="{% static 'showcase/css/template.css' %}">
+  <link rel="stylesheet" href="{% static 'showcase/css/main.css' %}">
+
+  <script>
+    if ($(window).width()>480){
+      console.log("computer");
+    }
+
+   else{
+     console.log("mobile");
+   }
+  </script>
+
+  <script type="text/javascript" src="{% static 'showcase/js/jquery.fullPage.js' %}"></script>
+  <script type="text/javascript" src="{% static 'showcase/js/scrolloverflow.js' %}"></script>
+  <script type="text/javascript" src="{% static 'showcase/js/full.js' %}"></script>
+
+</head>
+
+<body>
+
+  <ul id="menu">
+    <li data-menuanchor="accueil"><a href="#accueil">Accueil</a></li>
+    <li data-menuanchor="installation"><a href="#installation">Installation</a></li>
+    <li data-menuanchor="utilisation"><a href="#utilisation">Utilisation</a></li>
+    <li data-menuanchor="blog"><a href="#blog">Blog</a></li>
+    <li data-menuanchor="contacts"><a href="#contacts">Contacts</a></li>
+    <li data-menuanchor="easyweb"><a href="{% url 'easyweb:index' %}">Easyweb</a></li>
+  </ul>
+
+  <div id="fullpage">
+
+    <div class="section fp-auto-height-responsive" id="section0">
+      <div id="headerwrap" name="headerwrap">
+        <header class="clearfix">
+          <p>EasyDrive</p>
+          <p>Reprenez le contrôle de votre conduite</p>
+        </header>
+      </div>
+      <div id="probleme" class="row" name="probleme">
+        <div class="col-lg-4 centered" id="confort">
+          <h2>Confort</h2>
+          <p><img class="img-icon" src="{% static 'showcase/ico/armchair.png' %}" alt="Pièce dans la main">
+            <p>
+              <p>Améliorer votre conduite afin d'augmenter le confort, aussi bien pour vous que pour vos passagers.</p>
+        </div>
+        <!-- col-lg-4 -->
+
+        <div class="col-lg-4 centered" id="economie">
+          <h2>Économie</h2>
+          <p><img class="img-icon" src="{% static 'showcase/ico/dollar.png' %}" alt="Pièce dans la main">
+            <p>
+              <p>Économisez sur les coûts occasionnés par une conduite agressive en sanctionnant les conduites coûteuses.</p>
+        </div>
+        <!-- col-lg-4 -->
+
+        <div class="col-lg-4 centered" id="ecoconduite">
+          <h2>Écoconduite</h2>
+          <p><img class="img-icon" src="{% static 'showcase/ico/plant.png' %}" alt="Plante">
+            <p>
+              <p>Soyez acteurs de la transition énergétique et adoptez une conduite responsable de l'environnement.</p>
+        </div>
+        <!-- col-lg-4 -->
+      </div>
+      <!-- probleme -->
+    </div>
+
+    <div class="section fp-auto-height-responsive" id="section1">
+      <h1 class="centered">Installation</h1>
+      <br>
+      <div class="etape centered" id="etape1" name="etape1">
+        <div class="row row-eq-h">
+          <div class="col-lg-10">
+            <h2>Étape 1</h2>
+            <br>
+            <p>Commandez votre boîtier EasySensor au plus vite sur notre site et profitez au plus vite de notre offre complète de services dédiés à l'amélioration de votre conduite.</p>
+            <button class="btn">Obtenez votre boîtier EasySensor.</button>
+          </div>
+          <!-- col -->
+          <div class="col-lg-2">
+            <img src="{% static 'showcase/img/installation/etape1.png' %}" alt="Boîtier EasySensor">
+          </div>
+          <!-- col -->
+        </div>
+        <!-- row -->
+      </div>
+      <!-- etape -->
+      <div class="etape centered" id="etape2" name="etape2">
+        <div class="row row-eq-h">
+          <div class="col-lg-2">
+            <img src="{% static 'showcase/img/installation/etape2.png' %}" alt="Ordinateur/Tablette/Téléphone">
+          </div>
+          <!-- col -->
+          <div class="col-lg-10">
+            <h2>Étape 2</h2>
+            <br>
+            <p>Connectez vous au site client EasyDrive depuis n'importe quel appareil et associez votre boîtier à votre profil en un clic.</p>
+          </div>
+          <!-- col -->
+        </div>
+        <!-- row -->
+      </div>
+      <!-- etape -->
+      <div class="etape centered" id="etape3" name="etape3">
+        <div class="row row-eq-h">
+          <div class="col-lg-10">
+            <h2>Étape 3</h2>
+            <br>
+            <p>Connectez le boîtier à la prise OBD de votre voiture et commencez directement à rouler : vous pouvez directement profiter de tous les avantages offerts par EasyDrive.</p>
+          </div>
+          <!-- col -->
+          <div class="col-lg-2">
+            <img src="{% static 'showcase/img/installation/etape3.png' %}" alt="Prise OBD">
+          </div>
+          <!-- col -->
+        </div>
+        <!-- row -->
+      </div>
+      <!-- etape -->
+    </div>
+
+    <div class="section fp-auto-height-responsive" id="section2">
+      <div class="slide centered">
+        <h2>Consultez tous vos derniers trajets en vous connectant en 1 clic</h2>
+        <br>
+        <img src="{% static 'showcase/img/utilisation/screenshot1.png' %}" alt="Screenshot site EasyDrive">
+      </div>
+      <div class="slide centered">
+        <h2>Observez précisément l'évolution de votre conduite à l'aide de graphiques précis</h2>
+        <br>
+        <img src="{% static 'showcase/img/utilisation/screenshot2.png' %}" alt="Screenshot site EasyDrive">
+      </div>
+      <div class="slide centered">
+        <h2>Découvrez les moindres détails de chaque trajet</h2>
+        <br>
+        <img src="{% static 'showcase/img/utilisation/screenshot3.png' %}" alt="Screenshot site EasyDrive">
+      </div>
+    </div>
+
+    <div class="section centered fp-auto-height-responsive" id="section3">
+      <h1>L'équipe du projet EasyDrive</h1>
+      <br>
+      <p> Notre équipe est composée d’étudiants en deuxième année de l’école CentraleSupelec et de leur professeur référent, M. Jocelyn Fiorina qui nous encadre dans ce projet. </p>
+      <img src="{% static 'showcase\img\blog/fiorina.png' %}" alt="fiorina" height="110" width="126">
+      <figcaption class="figureblog"><a href="https://www.linkedin.com/in/jocelyn-fiorina-a413811/" class="test3" id="test3"><strong>Jocelyn Fiorina </strong><img src= "{% static 'showcase\ico/linkedin-button.png' %}">  </a></figcaption>
+      </br>
+      <div class="row centered">
+        <div class="col-lg-3 centered" id="colonne_blog">
+
+          <figure class="figureblog" id="figureblog">
+            <img src="{% static 'showcase\img\blog/gauthier.png' %}" alt="Gauthier" height="110" width="110">
+            <figcaption class="figureblog"><a href="https://www.linkedin.com/in/gauthierlacroix/" class="test3" id="test3"><strong>Gauthier Lacroix </strong> <img src= "{% static 'showcase\ico/linkedin-button.png' %}"> </a></br>Responsable Marketing </figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-3 centered" id="colonne_blog">
+
+          <figure class="figureblog" id="figureblog">
+            <img src="{% static 'showcase\img\blog/axel.png' %}" alt="Axel" height="110" width="110">
+            <figcaption class="figureblog"><a href="https://www.linkedin.com/in/axel-fournier-879645138/" class="test3" id="test3"><strong>Axel Fournier </strong><img src= "{% static 'showcase\ico/linkedin-button.png' %}"></a></br> Responsable Front-End </figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-3 centered" id="colonne_blog">
+          <figure class="figureblog" id="figureblog">
+            <img src="{% static 'showcase\img\blog/auguste.png' %}" alt="Auguste" height="110" width="110">
+            <figcaption class="figureblog"><a href="https://www.linkedin.com/in/auguste-simonin/" class="test3" id="test3"><strong>Auguste Simonin </strong><img src= "{% static 'showcase\ico/linkedin-button.png' %}"></a></br> Responsable Com' </figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-3 centered" id="colonne_blog">
+          <figure class="figureblog" id="figureblog">
+            <img src="{% static 'showcase\img\blog/theo.png' %}" alt="Theo" height="110" width="110">
+            <figcaption class="figureblog"><a href="https://www.linkedin.com/in/theobonnard/" class="test3" id="test3"><strong>Theo Bonnard </strong><img src= "{% static 'showcase\ico/linkedin-button.png' %}"></a></br> Responsable Back-end </figcaption>
+          </figure>
+        </div>
+      </div>
+      <h2>L' ancienne Equipe</h2>
+      <div class="row centered">
+
+        <div class="col-lg-3 centered" id="colonne_blog">
+          <figure class="figureblog" id="figureblog">
+            <img src="{% static 'showcase\img\blog/arnaud.png' %}" alt="Arnaud" height="110" width="110">
+            <figcaption class="figureblog"><a href="https://www.linkedin.com/in/gauthierlacroix/" class="test3" id="test3"><strong> Arnaud D'Esquerre </strong><img src= "{% static 'showcase\ico/linkedin-button.png' %}"> </a></figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-3 centered" id="colonne_blog">
+
+          <figure class="figureblog" id="figureblog">
+            <img src="{% static 'showcase\img\blog/leon.png' %}" alt="Leon" height="110" width="110">
+            <figcaption class="figureblog"><a href="https://www.linkedin.com/in/gauthierlacroix/" class="test3" id="test3"><strong> Leon Cardineaud </strong> <img src= "{% static 'showcase\ico/linkedin-button.png' %}"></a></figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-3 centered" id="colonne_blog">
+
+          <figure class="figureblog" id="figureblog">
+            <img src="{% static 'showcase\img\blog/leo.png' %}" alt="Leo" height="110" width="110">
+            <figcaption class="figureblog"><a href="https://www.linkedin.com/in/gauthierlacroix/" class="test3" id="test3"><strong> Leo Laugier </strong> <img src= "{% static 'showcase\ico/linkedin-button.png' %}"></a></figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-3 centered" id="colonne_blog">
+          <figure class="figureblog" id="figureblog">
+            <img src="{% static 'showcase\img\blog/olivier.png' %}" alt="Olivier" height="110" width="110">
+            <figcaption class="figureblog"><a href="https://www.linkedin.com/in/gauthierlacroix/" class="test3" id="test3"><strong> Olivier Rouanet </strong><img src= "{% static 'showcase\ico/linkedin-button.png' %}"> </a></figcaption>
+          </figure>
+        </div>
+      </div>
+      </br>
+      <p> Dans ce cadre, l’école a accepté de nous faire confiance en nous offrant l’opportunité de rejoindre l’incubateur de CentraleSupelec qui réunit les différentes startups des étudiants qui cherchent à devenir entrepreneurs.</p>
+    </div>
+
+    <div class="section fp-auto-height-responsive" id="section4">
+      <!-- ==== PARTENARIATS ==== -->
+      <section id="partenariats" class="container-fluid" name="partenariats">
+        <h1 class="centered">Partenariats</h1>
+        <br>
+        <div class="container-fluid">
+          <div class="row vertical-align">
+            <div class="col-lg-4 col-sm-4 text-center">
+              <img class="img-fluid" src="{% static 'showcase/img/partenariats/LogoCS1.png' %}" alt="CentraleSupélec">
+            </div>
+            <div class="col-lg-4 col-sm-4 text-center">
+              <img class="img-fluid" src="{% static 'showcase/img/partenariats/objenious-logo.png' %}" alt="Objenious">
+            </div>
+            <div class="col-lg-4 col-sm-4 text-center">
+              <img class="img-fluid" src="{% static 'showcase/img/partenariats/lora-logo.png' %}" alt="Lora">
+            </div>
+          </div>
+        </div>
+        <br>
+      </section>
+      <!-- partenariats -->
+
+      <!-- ==== CONTACTS ==== -->
+      <section class="container-fluid" id="contact" name="contact">
+        <h1 class="centered">Contactez nous !</h1>
+        <br>
+        <div class="row">
+          <div class="col-lg-2">
+            <p><span><img class="img-icon" src="{% static 'showcase/ico/facebook-logo-button.png' %}" alt="Facebook"></span><a href="">EasyDrive</a></p>
+          </div>
+          <!-- col -->
+
+          <div class="col-lg-2">
+            <p><span><img class="img-icon" src="{% static 'showcase/ico/twitter-logo-button.png' %}" alt="Twitter"></span><a href="">@EasyDrive</a></p>
+          </div>
+          <!-- col -->
+
+          <div class="col-lg-2">
+            <p><span><img class="img-icon" src="{% static 'showcase/ico/linkedin-button.png' %}" alt="Linkedin"></span><a href="">EasyDrive</a></p>
+          </div>
+          <!-- col -->
+
+          <div class="col-lg-2">
+            <p><span><img class="img-icon" src="{% static 'showcase/ico/email.png' %}" alt="Email"></span><a href="">easydrive@centralesupelec.fr</a></p>
+          </div>
+          <!-- col -->
+
+          <div class="col-lg-2">
+            <p><span><img class="img-icon" src="{% static 'showcase/ico/placeholder.png' %}" alt="Adresse"></span>1 rue Joliot Curie, 91190, Gif-sur-Yvette</p>
+          </div>
+          <!-- col -->
+
+          <div class="col-lg-2">
+            <p><span><img class="img-icon" src="{% static 'showcase/ico/smartphone.png' %}" alt="Téléphone"></span>06 45 79 84 08</p>
+          </div>
+          <!-- col -->
+
+        </div>
+        <!-- row -->
+
+      </section>
+      <!-- contacts -->
+
+      <!-- ==== FOOTER ==== -->
+      <section id="footerwrap">
+        <div class="container">
+          <h4>Copyright © EasyDrive 2018. All rights reserved.</h4>
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+
+
+  <!-- ==== SCRIPTS AGAIN ==== -->
+  <script type="text/javascript" src="{% static 'js/jquery-func.js' %}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+/* ==========================================================================
+   Header section
+   ========================================================================== */
+
+#headerwrap {
+  height: 65%;
+}
+
+/* ==========================================================================
+   Probleme section
+   ========================================================================== */
+
+#probleme .col-lg-4 {
+  padding-top: 3%;
+}
+
+#probleme {
+  height: 35%;
+}
+
+#confort {
+  background-color: rgba(79, 166, 219, 1);
+}
+
+#confort:hover {
+  background-color: rgba(79, 166, 219, 0.95);
+}
+
+#economie {
+  background-color: rgba(220, 181, 77, 1);
+}
+
+#economie:hover {
+  background-color: rgba(220, 181, 77, 0.95);
+}
+
+#ecoconduite {
+  background-color: rgba(121, 194, 88, 1);
+}
+
+#ecoconduite:hover {
+  background-color: rgba(121, 194, 88, 0.95);
+}
+
+#probleme h2 {
+  color: #666;
+  font-weight: bold;
+}
+
+#probleme .col-lg-4:hover h2 {
+  color: #444;
+  font-weight: bold;
+}
+
+#probleme p {
+  font-size: 18px;
+  color: white;
+}
+
+#probleme .img-icon {
+  height: 10%;
+  width: 10%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* ==========================================================================
+   Installation section
+   ========================================================================== */
+
+.etape {
+  margin-top: 15px;
+  background-color: #333;
+  text-align: justify;
+  padding: 20px;
+}
+
+.etape a {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.etape img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+
+.etape h2 {
+  color: rgba(79, 166, 219, 1);
+}
+
+.etape p {
+  color: #DDD;
+}
+
+#etape1 {
+  margin-left: 10%;
+  margin-right: 20%;
+  border-style: none solid none solid;
+  border-width: 20px;
+  border-color: rgba(79, 166, 219, 1);
+}
+
+#etape2 {
+  margin-left: 20%;
+  margin-right: 10%;
+  border-style: none solid none solid;
+  border-width: 20px;
+  border-color: rgba(79, 166, 219, 1);
+}
+
+#etape3 {
+  margin-left: 10%;
+  margin-right: 20%;
+  border-style: none solid none solid;
+  border-width: 20px;
+  border-color: rgba(79, 166, 219, 1);
+}
+
+.etape .btn {
+  background-color: rgba(79, 166, 219, 1);
+  color: white;
+  width: 300px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+}
+
+/* ==========================================================================
+   Utilisation section
+   ========================================================================== */
+
+#section2 {
+  background-color: #333;
+}
+
+#section2 h2 {
+  color: rgba(79, 166, 219, 1);
+}
+
+.fp-controlArrow.fp-prev {
+  border-color: transparent rgba(79, 166, 219, 1) transparent transparent;
+}
+
+.fp-controlArrow.fp-next {
+  border-color: transparent transparent transparent rgba(79, 166, 219, 1);
+}
+
+/* ==========================================================================
+   Blog section
+   ========================================================================== */
+
+#titreblog {
+  font-size: 25px;
+  font-family: "Raleway";
+}
+
+#section3 .row {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ==========================================================================
+   Contact Section
+   ========================================================================== */
+
+#contact p {
+  text-align: center;
+}
+
+#contact img {
+  margin-right: 5px;
+}
+
+#contact {
+  height: 20%;
+}
+
+/* ==========================================================================
+   Partenariats Section
+   ========================================================================== */
+
+#partenariats .img-fluid {
+  margin-top: auto;
+  margin-bottom: auto;
+  max-height: 150px;
+}
+
+#partenariats {
+  border-style: none solid none solid;
+  border-width: 20px;
+  border-color: #bbb;
+  background-color: #EEE;
+  height: 70%;
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
+#footerwrap {
+  height: 10%;
+}
+
+/* ==========================================================================
+   Menu
+   ========================================================================== */
+
+#menu li {
+  display: inline-block;
+  margin: 10px;
+  color: #000;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#menu li.active {
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+#menu li a {
+  text-decoration: none;
+  color: #000;
+}
+
+#menu li.active a:hover {
+  color: #000;
+}
+
+#menu li:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+#menu li a, #menu li.active a {
+  padding: 9px 18px;
+  display: block;
+}
+
+#menu li.active a {
+  color: #fff;
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  z-index: 70;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
